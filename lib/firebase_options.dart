@@ -2,6 +2,7 @@
 // ignore_for_file: type=lint
 import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
+import 'package:flutter_dotenv/flutter_dotenv.dart';
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
 /// Default [FirebaseOptions] for use with your Firebase apps.
@@ -41,7 +42,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDAEj65a5TeKubmAmVXlOP7YUwixACuS90',
+    apiKey: dotenv.env['FIREBASE_API_KEY']!,
     appId: '1:521279787398:web:5a2959d4c43cc032485c07',
     messagingSenderId: '521279787398',
     projectId: 'barbershop-flutter-41f45',
@@ -50,7 +51,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC_n48oKJtEpAc_eKBIJdxqvhbvK8iSiVw',
+    apiKey: dotenv.env['FIREBASE_API_KEY']!,
     appId: '1:521279787398:android:a18cd8c33749b97a485c07',
     messagingSenderId: '521279787398',
     projectId: 'barbershop-flutter-41f45',
@@ -58,7 +59,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB2zY9FZEouf-4dtn4UYhsSk8mjpsaJgyo',
+    apiKey: dotenv.env['FIREBASE_API_KEY']!,
     appId: '1:521279787398:ios:b19347eef49f99ef485c07',
     messagingSenderId: '521279787398',
     projectId: 'barbershop-flutter-41f45',
@@ -67,7 +68,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB2zY9FZEouf-4dtn4UYhsSk8mjpsaJgyo',
+    apiKey: dotenv.env['FIREBASE_API_KEY']!,
     appId: '1:521279787398:ios:b19347eef49f99ef485c07',
     messagingSenderId: '521279787398',
     projectId: 'barbershop-flutter-41f45',
@@ -76,7 +77,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDAEj65a5TeKubmAmVXlOP7YUwixACuS90',
+    apiKey: dotenv.env['FIREBASE_API_KEY']!,
     appId: '1:521279787398:web:4bb5b94114606aaf485c07',
     messagingSenderId: '521279787398',
     projectId: 'barbershop-flutter-41f45',

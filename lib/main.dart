@@ -8,6 +8,7 @@ import 'screens/profile_screen.dart';
 import 'screens/signup_screen.dart';
 import 'screens/forgot_password_screen.dart';
 import 'firebase_options.dart'; 
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   // Ensure Flutter binding is initialized
